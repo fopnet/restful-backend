@@ -8,7 +8,7 @@ Commands sequences
 -- compiling the app
 
 ```
-* mvn package 
+ mvn package 
 ```
 
 -- Ways to startup app
