@@ -6,23 +6,34 @@
 Commands sequences
 
 -- compiling the app
-1. mvn package 
 
--- two ways to startup app
-2.1 Heroku local web 
-2.2 java -jar ./target/backend-developer-0.0.1-SNAPSHOT.jar
+```
+* mvn package 
+```
 
+-- 2 two ways to startup app
 
--- here is the Heroku documentation reference
-https://devcenter.heroku.com/articles/getting-started-with-java#deploy-the-app
+* 2.1 here is the Heroku documentation reference
 
-* The application link will be available in the link below.
+-- https://devcenter.heroku.com/articles/getting-started-with-java#deploy-the-app
 
-http://localhost:8080/v1/places
+``` 
+Heroku local web	
+```
+ 
+* 2.2 Running Java compiled package 
 
-* Documentation link 
+```
+java -jar ./target/backend-developer-0.0.1-SNAPSHOT.jar  
+```
 
-http://localhost:8080/swagger-ui.html#/place-controller
+The application link will be available in the link below.
+
+* http://localhost:8080/v1/places
+
+Documentation link 
+
+* http://localhost:8080/swagger-ui.html#/place-controller
 
 ## Api links
 
