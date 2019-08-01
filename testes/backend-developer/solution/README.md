@@ -11,7 +11,7 @@ Commands sequences
 * mvn package 
 ```
 
--- 2 two ways to startup app
+-- Ways to startup app
 
 * 2.1 here is the Heroku documentation reference
 
