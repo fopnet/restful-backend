@@ -24,10 +24,17 @@ public class Place {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	
 	@NotNull(message="Name is required")
 	private String name;
+	
+	@NotNull(message="Slug is required")
 	private String slug;
+	
+	@NotNull(message="City is required")
 	private String city;
+	
+	@NotNull(message="State is required")
 	private String state;
 
 	@CreatedDate
