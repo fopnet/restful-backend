@@ -24,34 +24,43 @@ import com.clickbus.place.exception.PlaceException;
 import com.clickbus.place.model.Place;
 import com.clickbus.place.service.PlaceService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @RequestMapping("v1/places")
+@Api(value = "Places")
 public class PlaceController {
 
 	@Autowired
 	private PlaceService service;
 
 	@GetMapping("/{id}")
+	@ApiOperation(value = "Get a Place by id")
 	final Place getPlaceById(@PathVariable("id") Long id) {
 		return this.service.getPlaceById(id);
 	}
 
 	@GetMapping("/place/{name}")
+	@ApiOperation(value = "Get a Place by name")
 	final List<Place> getPlaceByName(@PathVariable("name") String name) {
 		return this.service.getPlacesByName(name);
 	}
 
 	@PostMapping(value = "/")
+	@ApiOperation(value = "Create a Place")
 	final Place createPlace(@RequestBody Place p) {
 		return this.service.createPlace(p);
 	}
 
 	@PutMapping("/{id}")
+	@ApiOperation(value = "Update a Place existing place by id")
 	final Place updatePlace(@RequestBody Place p, @PathVariable("id") Long id) {
 		return this.service.updatePlace(p, id);
 	}
 
 	@DeleteMapping("/{id}")
+	@ApiOperation(value = "Delete a Place by id")
 	final void deletePlace(@PathVariable("id") Long id) {
 		this.service.deleteById(id);
 	}

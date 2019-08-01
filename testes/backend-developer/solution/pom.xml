@@ -31,16 +31,6 @@
 				</configuration>
 			</plugin>
 
-<!-- 			<plugin> -->
-<!-- 				<artifactId>maven-assembly-plugin</artifactId> -->
-<!-- 				<version>3.0.0</version> -->
-<!-- 				<configuration> -->
-<!-- 					<descriptorRefs> -->
-<!-- 						<descriptorRef>jar-with-dependencies</descriptorRef> -->
-<!-- 					</descriptorRefs> -->
-<!-- 					<finalName>click-bus-test</finalName> -->
-<!-- 				</configuration> -->
-<!-- 			</plugin> -->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -66,6 +56,21 @@
 
 	<dependencies>
 
+
+		<!-- Swagger 2 Doc Dependency -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+
+		<!-- Swagger 2 UI -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		
 		<!-- spring boot starter -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
