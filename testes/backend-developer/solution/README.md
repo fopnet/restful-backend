@@ -37,11 +37,11 @@ Documentation link
 
 ## Api links
 
-* **List place by name** 
+* ** List place by name ** 
 - GET http://localhost:8080/v1/places/place/pina
 
 
-* **List place by id 1** 
+* ** List place by id 1 ** 
 - GET http://localhost:8080/v1/places/1
 
 
