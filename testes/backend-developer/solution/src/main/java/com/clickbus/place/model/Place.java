@@ -124,9 +124,13 @@ public class Place {
 	public void setState(String state) {
 		this.state = state;
 	}
-
+	
 	public LocalDateTime getCreatedAt() {
 		return createdAt;
+	}
+
+	public void setCreatedAt(LocalDateTime dt) {
+		this.createdAt = dt;
 	}
 
 	public LocalDateTime getUpdateAt() {

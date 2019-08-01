@@ -26,20 +26,24 @@ http://localhost:8080/swagger-ui.html#/place-controller
 
 ## Api links
 
-* **List place by name** * 
-GET http://localhost:8080/v1/places/place/pina
+* **List place by name** 
+- GET http://localhost:8080/v1/places/place/pina
 
-* **List place by id 1** * 
-GET http://localhost:8080/v1/places/1
 
-* **Create place ** * 
-POST http://localhost:8080/v1/places/1
+* **List place by id 1** 
+- GET http://localhost:8080/v1/places/1
 
-* **Update place ** * 
-PUT http://localhost:8080/v1/places/1
 
-* **Delete place by id 1 ** * 
-DELETE http://localhost:8080/v1/places/1
+* **Create place ** 
+- POST http://localhost:8080/v1/places/1
+
+
+* **Update place ** 
+- PUT http://localhost:8080/v1/places/1
+
+
+* **Delete place by id 1 ** 
+- DELETE http://localhost:8080/v1/places/1
 
 
 ### Prerequisites 

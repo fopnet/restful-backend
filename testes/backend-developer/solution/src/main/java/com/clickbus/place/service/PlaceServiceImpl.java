@@ -34,7 +34,11 @@ public class PlaceServiceImpl implements PlaceService {
 	@Transactional
 	public Place updatePlace(Place newPlace, Long id) {
 		return this.repo.findById(id).map(p -> {
+			
+			// remains the CreateAt and Id data
 			newPlace.setId(p.getId());
+			newPlace.setCreatedAt(p.getCreatedAt());
+			
 			return this.repo.save(newPlace);
 
 		}).orElseThrow(() -> new PlaceException("Place " + id + " does not exists"));
