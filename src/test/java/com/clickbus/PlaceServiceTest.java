@@ -1,4 +1,4 @@
-package com.clickbus;
+package com.company;
 
 //import static org.junit.Assert.assertEquals;
 //import static org.junit.Assert.assertFalse;
@@ -21,11 +21,11 @@ import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.TransactionSystemException;
 
-import com.clickbus.place.PlaceApplication;
-import com.clickbus.place.exception.PlaceException;
-import com.clickbus.place.model.Place;
-import com.clickbus.place.repository.PlaceRepository;
-import com.clickbus.place.service.PlaceServiceImpl;
+import com.company.place.PlaceApplication;
+import com.company.place.exception.PlaceException;
+import com.company.place.model.Place;
+import com.company.place.repository.PlaceRepository;
+import com.company.place.service.PlaceServiceImpl;
 
 //@RunWith(MockitoJUnitRunner.class)
 @SpringBootTest(classes = PlaceApplication.class)
@@ -62,7 +62,7 @@ public class PlaceServiceTest {
 
 		Mockito.when(placeRepository.findByName("pina")).thenReturn(emptyList);
 
-		assertThrows(PlaceException.class,() -> this.placeService.getPlacesByName("pina"));
+		assertThrows(PlaceException.class, () -> this.placeService.getPlacesByName("pina"));
 
 	}
 
@@ -128,7 +128,7 @@ public class PlaceServiceTest {
 
 		Mockito.when(placeRepository.findById(1l)).thenReturn(Optional.of(expected));
 
-		assertEquals( expected.getName(), "pina", "Place name must by pina");
+		assertEquals(expected.getName(), "pina", "Place name must by pina");
 
 		expected.setName("pina2");
 

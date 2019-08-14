@@ -1,6 +1,5 @@
 # Backend Developer Challenge
 This is a simple challenge to test your skills on building APIs.
-The ClickBus services use mainly Java and Springboot technologies. However, you can use any language and framework that you feel more confortable.
 
 # What to do
 Create a simple API to manage places (CRUD). This API should allow to:
@@ -31,6 +30,3 @@ A place must have the following fields:
 - Project structure, architecturing and organization
 - Programming good practices
 - VCS practices
-
-# Delivery
-You must **fork** this repository and commit the solution in the **solution** folder. Your repository must be public. After that, send the repository link on the **kenoby platform**.

@@ -39,7 +39,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.clickbus.place.PlaceApplication</mainClass>
+							<mainClass>com.company.place.PlaceApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
